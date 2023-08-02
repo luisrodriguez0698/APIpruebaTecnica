@@ -33,18 +33,18 @@ namespace APIprueba.services
                 cuerpoHtml.AppendLine("<head>");
                 cuerpoHtml.AppendLine("<style>");
                 cuerpoHtml.AppendLine(".conteiner{");
-                cuerpoHtml.AppendLine("display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;");
+                cuerpoHtml.AppendLine("height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;");
                 cuerpoHtml.AppendLine("}");
                 cuerpoHtml.AppendLine("</style>");
                 cuerpoHtml.AppendLine("</head>");
                 cuerpoHtml.AppendLine("<body>");
-                cuerpoHtml.AppendLine("<div style=\"display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;\">" +
-                                     "<div style=\"background-color: #1EF531; width: 500px; height: 200px; display: flex; flex-direction: row; align-items: center; justify-content: space-between; border-radius: 50px; margin-bottom: 10%; padding: 10px;\">" +
-                                     "<h1 style=\"color: white; font-size: 50px; text-align: left; margin: 30px;\">Green Leaves</h1>" +
-                                     "<img width=\"70\" height=\"70\" src=\"https://toppng.com/uploads/thumbnail/clipart-hoja-hoja-de-arbol-logo-11562973259drxvxjjfl6.png\" />" +
+                cuerpoHtml.AppendLine("<div style=\"height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;\">" +
+                                     "<div style=\"width: 60%; height: 200px; background-color: #1be22c; display: flex; flex-direction: row;\r\n        border-radius: 60px; align-items: center; justify-content: space-between; padding: 10px; margin: 5% auto;\">" +
+                                     "<h1 style=\"font-size: 40px; color: white; text-align: left; margin: 30px;\">Green Leaves</h1>" +
+                                     "<img width=\"65\" height=\"65\" src=\"https://img.freepik.com/iconos-gratis/hoja_318-336174.jpg\" />" +
                                      "</div>" +
                                      $"<div><h3>Estimado <b>{data.name}</b></h3>  <p>Hemos recibido sus datos y nos pondremos en contacto con usted en la brevedad posible. Enviaremos un correo con información a su cuenta: {data.email}.</p></div>" +
-                                     $"<div style=\"text-align: right;\"><b style=\"display: inline-block;\">Atte.</b> <h3 style=\"color: green;\">Green Leaves</h3> <h3>{data.cityState} a {dateddMMMMYYYY}</h3></div>" +
+                                     $"<div style=\"text-align: right; width: 60%;\"><b style=\"display: inline-block;\">Atte.</b> <h3 style=\"color: #1be22c;\">Green Leaves</h3> <h3>{data.cityState} a {dateddMMMMYYYY}</h3></div>" +
                                      "</div>");
                 cuerpoHtml.AppendLine("</body>");
                 cuerpoHtml.AppendLine("</html>");
