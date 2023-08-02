@@ -23,7 +23,7 @@ namespace APIprueba.services
             try
             {
                 var message = new MimeMessage();
-                message.From.Add(new MailboxAddress("LUIS", $"qwerty_eduard98@hotmail.com"));
+                message.From.Add(new MailboxAddress("ECTOTEC", $"evelazquez@ectotec.com"));
                 message.To.Add(new MailboxAddress($"{data.name}", $"{data.email}"));
                 message.Subject = $"Estimado {data.name}";
                 var dateddMMMMYYYY = data.date.ToString("dd-MMMM-yyyy");
