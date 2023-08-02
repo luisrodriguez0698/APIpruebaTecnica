@@ -57,7 +57,7 @@ namespace APIprueba.services
                 using (var client = new SmtpClient())
                 {
                     client.Connect("smtp.office365.com", 587, false);
-                    client.Authenticate("qwerty_eduard98@hotmail.com", "");
+                    client.Authenticate("", "");
                     client.Send(message);
                     client.Disconnect(true);
                 }
